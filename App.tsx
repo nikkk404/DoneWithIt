@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View,TouchableWithoutFeedback,TouchableOpacity ,Image ,SafeAreaView} from 'react-native';
+import { StyleSheet,Alert , Text, View,TouchableHighlight,TouchableWithoutFeedback,TouchableOpacity ,Image ,SafeAreaView, Button} from 'react-native';
 //to avoid text on notch we use SafeAreaView
 //Image component is use to use image in application
 
@@ -66,21 +66,62 @@ export default function App() {
     // </SafeAreaView>
 
 //TouchableOpacity reduce the opacity of image on tap
-<SafeAreaView style={styles.container}>
-<Text>Open up App.tsx to start working on your app!</Text>
-<TouchableOpacity onPress={() => console.log("Image tapped")}>
-<Image
-  source={{
-  width:200,
-  height:200,
-  uri:"https://picsum.photos/200"}}/>
-</TouchableOpacity>
-</SafeAreaView>
-
-
     // <SafeAreaView style={styles.container}>
     // <Text>Open up App.tsx to start working on your app!</Text>
+    // <TouchableOpacity onPress={() => console.log("Image tapped")}>
+    // <Image
+    //   source={{
+    //   width:200,
+    //   height:200,
+    //   uri:"https://picsum.photos/200"}}/>
+    // </TouchableOpacity>
     // </SafeAreaView>
+
+    //TouhableHighLight dark's bg for tab
+    // <SafeAreaView style={styles.container}>
+    //   <Text>Open up App.tsx to start working on your app!</Text>
+    //   <TouchableHighlight onPress={() => console.log("Image tapped")}>
+    //   <Image
+    //     source={{
+    //     width:200,
+    //     height:200,
+    //     uri:"https://picsum.photos/200"}}/>
+    //   </TouchableHighlight>
+    //   </SafeAreaView>
+
+    //button
+    // <SafeAreaView style={styles.container}>
+    //   <Button 
+    //   color="pink"
+    //   title='Clickme' onPress={() => console.log("Button tapped")}/>
+    // </SafeAreaView>
+
+    //alert function
+    // <SafeAreaView style={styles.container}>
+    //   <Button 
+    //   color="pink"
+    //   title='Clickme' onPress={() => alert("Alert works")}/>
+    // </SafeAreaView>
+
+    //Alret with alert custom button 
+    // <SafeAreaView style={styles.container}>
+    //   <Button 
+    //   color="pink"
+    //   title='Clickme' 
+    //   onPress={() => Alert.alert("My title","My message",[
+    //     {text:"YES", onPress:() => console.log("yes is clicked")},
+    //     {text:"NO", onPress:() => console.log("on is clicked")},
+    //   ])}/>
+    // </SafeAreaView>
+
+    //promt is only for IOS
+    <SafeAreaView style={ styles.container}>
+    <Button 
+    color="pink"
+    title='Clickme' 
+    onPress={() => Alert.prompt("My title","My message",text => console.log(text))}
+    />
+  </SafeAreaView>
   );
 }
 
