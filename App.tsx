@@ -15,36 +15,43 @@ export default function App() {
   //const{landscape}= useDeviceOrientation();
   return (
 
-    <View
-    style={{
-      backgroundColor:'pink',
-      flex:1,
-      flexDirection:'row', //horzontal
-      justifyContent:'center', //main
-      alignItems:'center' //secondary
-    }}
-    >
-      <View 
-      style={{
-      backgroundColor:"gold",
-      width:100,
-      height:100,
-    }}/>
-      <View 
-      style={{
-      backgroundColor:"tomato",
-      width:100,
-      height:200,
-    }}/>
-      <View 
+    // <View
+    // style={{
+    //   backgroundColor:'pink',
+    //   flex:1,
+    //   flexDirection:'row', //horzontal
+    //   justifyContent:'center', //main
+    //   alignItems:'center' //secondary
+    // }}
+    // >
+    //   <View 
+    //   style={{
+    //   backgroundColor:"gold",
+    //   width:100,
+    //   height:100,
+    // }}/>
+    //   <View 
+    //   style={{
+    //   backgroundColor:"tomato",
+    //   width:100,
+    //   height:200,
+    // }}/>
+    //   <View 
+    //   style={{
+    //   backgroundColor:"orange",
+    //   width:100,
+    //   height:300,
+    //   //alignSelf:'flex-start',
+    // }}/>
+    // </View>
+    <View 
       style={{
       backgroundColor:"orange",
       width:100,
       height:300,
+      justifyContent:'center',
       //alignSelf:'flex-start',
     }}/>
-    </View>
-
 
    /* <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
