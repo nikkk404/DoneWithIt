@@ -115,13 +115,13 @@ export default function App() {
     // </SafeAreaView>
 
     //promt is only for IOS
-    <SafeAreaView style={ styles.container}>
-    <Button 
-    color="pink"
-    title='Clickme' 
-    onPress={() => Alert.prompt("My title","My message",text => console.log(text))}
-    />
-  </SafeAreaView>
+    //   <SafeAreaView style={  styles.container}>
+    //   <Button 
+    //   color="pink"
+    //   title='Clickme' 
+    //   onPress={() => Alert.prompt("My title","My message",text => console.log(text))}
+    //   />
+    // </SafeAreaView>
   );
 }
 
