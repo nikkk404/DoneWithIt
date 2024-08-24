@@ -19,8 +19,9 @@ export default function App() {
     style={{
       backgroundColor:'pink',
       flex:1,
-      flexDirection:'row',
-      justifyContent:'space-between',
+      flexDirection:'row', //horzontal
+      justifyContent:'center', //main
+      alignItems:'center' //secondary
     }}
     >
       <View 
@@ -33,13 +34,14 @@ export default function App() {
       style={{
       backgroundColor:"tomato",
       width:100,
-      height:100,
+      height:200,
     }}/>
       <View 
       style={{
       backgroundColor:"orange",
       width:100,
-      height:100,
+      height:300,
+      //alignSelf:'flex-start',
     }}/>
     </View>
 
