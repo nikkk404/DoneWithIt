@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import{ useDeviceOrientation } from '@react-native-community/hooks';
 import { StyleSheet,Dimensions,Alert , Text, View,TouchableHighlight,TouchableWithoutFeedback,TouchableOpacity ,Image ,SafeAreaView, Button} from 'react-native';
+import WelcomeScreem from './app/screens/WelcomeScreem';
 //to avoid text on notch we use SafeAreaView
 //Image component is use to use image in application
 
@@ -15,6 +16,8 @@ export default function App() {
   //const{landscape}= useDeviceOrientation();
   return (
 
+    <WelcomeScreem/>
+   
     // <View
     // style={{
     //   backgroundColor:'pink',
@@ -44,14 +47,14 @@ export default function App() {
     //   //alignSelf:'flex-start',
     // }}/>
     // </View>
-    <View 
-      style={{
-      backgroundColor:"orange",
-      width:100,
-      height:300,
-      justifyContent:'center',
-      //alignSelf:'flex-start',
-    }}/>
+    // <View 
+    //   style={{
+    //   backgroundColor:"orange",
+    //   width:100,
+    //   height:300,
+    //   justifyContent:'center',
+    //   //alignSelf:'flex-start',
+    // }}/>
 
    /* <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
