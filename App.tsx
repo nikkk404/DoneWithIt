@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet,Alert , Text, View,TouchableHighlight,TouchableWithoutFeedback,TouchableOpacity ,Image ,SafeAreaView, Button} from 'react-native';
+import{ useDeviceOrientation } from '@react-native-community/hooks';
+import { StyleSheet,Dimensions,Alert , Text, View,TouchableHighlight,TouchableWithoutFeedback,TouchableOpacity ,Image ,SafeAreaView, Button} from 'react-native';
 //to avoid text on notch we use SafeAreaView
 //Image component is use to use image in application
 
@@ -7,7 +8,42 @@ import { StyleSheet,Alert , Text, View,TouchableHighlight,TouchableWithoutFeedba
 export default function App() {
   //here we have created funtion instead on writing console.log in onPress event
   const handlePress = () => (console.log("Text Clicked")); 
+
+  //to get dimemsions on a phone or device
+  // console.log(Dimensions.get('screen'))
+  //console.log(useDeviceOrientation())
+  //const{landscape}= useDeviceOrientation();
   return (
+
+    <View
+    style={{
+      backgroundColor:'pink',
+      flex:1,
+      flexDirection:'row',
+      justifyContent:'space-between',
+    }}
+    >
+      <View 
+      style={{
+      backgroundColor:"gold",
+      width:100,
+      height:100,
+    }}/>
+      <View 
+      style={{
+      backgroundColor:"tomato",
+      width:100,
+      height:100,
+    }}/>
+      <View 
+      style={{
+      backgroundColor:"orange",
+      width:100,
+      height:100,
+    }}/>
+    </View>
+
+
    /* <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
