@@ -6,7 +6,9 @@ function WelcomeScreem(props) {
         <ImageBackground 
         style={styles.background}
         source={(require('../assets/background.jpeg'))}>
-            <Image styles={styles.Logo} source={require('../assets/logo.jpeg')}/>
+            <Image 
+            resizeMode="contain"
+            styles={styles.Logo} source={require('../assets/logo.jpeg')}/>
             <View style={styles.loginButton}></View>
             <View style={styles.registerButton}></View>
         </ImageBackground>
@@ -25,8 +27,8 @@ const styles = StyleSheet.create({
         backgroundColor:'#fc5c65'
     },
     Logo:{
-        width:'1%',
-        height:'1%',
+        width:'100%',
+        height:'100%',
         position:"absolute",
         top:70,
     },
